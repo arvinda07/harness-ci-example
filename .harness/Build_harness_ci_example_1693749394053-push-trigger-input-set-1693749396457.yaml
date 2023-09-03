@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_harness_ci_example_1693749394053-push-trigger-input-set
+  identifier: Build_harness_ci_example_1693749394053pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: dev
+  pipeline:
+    identifier: Build_harness_ci_example_1693749394053
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
