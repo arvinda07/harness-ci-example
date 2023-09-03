@@ -34,6 +34,6 @@ pipeline:
                   identifier: BuildAndPushDockerRegistry_1
                   spec:
                     connectorRef: arvind108
-                    repo: <+input>
+                    repo: arvinda108 / node-hello-world
                     tags:
                       - latest
