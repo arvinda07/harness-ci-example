@@ -32,17 +32,14 @@ pipeline:
                   timeout: ""
                   type: Run
               - step:
-                  identifier: dockerbuild
-                  name: docker_build
+                  type: BuildAndPushDockerRegistry
+                  name: docker build and push
+                  identifier: docker_build_and_push
                   spec:
                     connectorRef: arvinda108
-                    image: arvinda108 / node-hello-world
-                    settings:
-                      dry_run: "true"
-                      repo: hello/world
-                      tags: latest
-                  timeout: ""
-                  type: Plugin
+                    repo: arvinda108/node-hello-world
+                    tags:
+                      - latest
           platform:
             os: Linux
             arch: Amd64
