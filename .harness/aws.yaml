@@ -29,11 +29,9 @@ pipeline:
           execution:
             steps:
               - step:
-                  type: BuildAndPushDockerRegistry
-                  name: BuildAndPushDockerRegistry_1
-                  identifier: BuildAndPushDockerRegistry_1
+                  type: Run
+                  name: Run_1
+                  identifier: Run_1
                   spec:
-                    connectorRef: arvind108
-                    repo: arvinda108 / node-hello-world
-                    tags:
-                      - latest
+                    shell: Sh
+                    command: echo "wlcome to harness"
