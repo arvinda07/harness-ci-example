@@ -8,7 +8,6 @@ pipeline:
     ci:
       codebase:
         connectorRef: arvinda07
-        repoName: arvinda07/harness-ci-example
         build: <+input>
   stages:
     - stage:
